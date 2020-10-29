@@ -4,71 +4,96 @@
 <head>
   <meta charset="utf-8">
   <title>Anna Holubová</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico">
-  <!--favicon jednoduše udělám na strákách faviconer.com a stačí tam vložit obrázek cca o velkosti 32px-->
-  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+   <!--favicon jednoduše udělám na strákách faviconer.com a stačí tam vložit obrázek cca o velkosti 32px-->
+  <link rel="icon" href="images/favicon.ico">
+ <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="top-container">
-    <img class="cloud-top" src="images/cloud.png" alt="cloud">
+  <header class="top-container">
+   <nav>
+      <ul>
+        <li><a href="#profile" class="nav_item">Profile</a></li>
+        <li><a href="#skills" class="nav_item">Skills</a></li>
+        <li><a href="#contact" class="nav_item">Contact</a></li>
+      </ul>
+   </nav>
+   <section>
     <h1>I'm Anna</h1>
     <h2>a pharmacovigilace assesor
-      <!-- and becoming web developer-->
     </h2>
-    <img class="cloud-bottom" src="images/cloud.png" alt="cloud">
+    <h3> and I want to be a webdeveloper
+    </h3>
+    
     <img class="mountain" src="images/mountains.PNG" alt="mountain" width="498" height="297">
-  </div>
+  </section>
+  </header>
 
-  <div class="middle-container">
-    <div class="profile">
-      <img class="anna"src="images/anna2_5.png" alt="anna" width="220px">
-      <h2>Hello.</h2>
-      <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+  <main class="middle-container">
+    <div id="profile" class="profile">
+      <img class="profile-pic"src="images/anna2_5.png" alt="anna" width="220px">
+      <h2>Hello,</h2>
+      <p>I studied invertebrate zoology at the Charles university in Prague, than I started to work at State Institute for Drug Control (SÚKL). 
+        I monitor drug safety in Czech republic and also in EU. My dream is to work as web developer.
+      </p>
     </div>
     <hr>
-    <div class="skills">
+
+    <div id="skills" class="skills">
       <h2>My Skills.</h2>
 
       <div class="skill-row">
-          <img class="FV" src="images/drug1.png" alt="pills a magnifiing glass">
+          <img class="drug" src="images/drug1.png" alt="pills a magnifiing glass">
           <h3>Pharmacovigilance</h3>
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-
+          <p>My duty is evaluation of the drug safety and comunication with the European Medicines Agency and other national competent authorities, various pharmaceutical companies.
+            <br>
+            I am responsible for risk communication to both healthcare professionals and patients, to promote the safe use of medicines. Více se o mé práci můžete dozvědět na linkedin</p>
       </div>
       <br>
       <div class="skill-row">
           <img class="webdev" src="images/webdev1.png" alt="computer with web developement atributes" width=" 240px">
           <h3>Web development and design</h3>
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+          <p>I started with web developement in October 2020. It's still October and I made this simple website.
+            All these paintings on the page are painted by myself in procreate.
+            <br>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+          </p>
+          <!-- <p>Začala jsem se v říjnu 2020 učit jak napsat web. ještě není konec října a už píšu tohle s pomocí html a css, javascript je u mě v plenkách.
+            <br>
+            také se věnuji kresbě a digitaln malbě. Veškerou grafiku tady jsem dělala sama v procreate. Další moje výtvory můžete vidět na instagramu.
+          </p> -->
 
       </div>
 <br>
       <div class="skill-row">
           <img class="baking" src="images/baking1.png" alt="" width="240px">
           <h3>Baking</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer imperdiet lectus quis justo. 
+          Pellentesque arcu. Aliquam erat volutpat. Maecenas aliquet accumsan leo. Curabitur bibendum justo non orci. Suspendisse nisl
+          <!-- <p>No jo, ještě taky ráda a prý dobře peču, kdysi jsem měla i blog o pečení. Moji přátelé mají neraději moje lasagne a štrůdl.
+            <br>
+            Pokud se někdy setkáme, třeba v práci, určitě donesu ochutnat.
+          </p> -->
       </div>
 
     </div>
     <hr>
-    <div class="contact-me">
+    <div id="contact" class="contact-me">
       <h2>Get In Touch</h2>
       <h3>Lorem ipsum dolor sit amet, non elit.</h3>
       <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
       <a class="btn" href="mailto:anbeads@seznam.cz"><button class="button_ebc"type="button">CONTACT ME</button></a>
     </div>
-  </div>
+  </main>
 
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/anna-holubov%C3%A1-84810a162/">LinkedIn</a>
-    <a class="footer-link" href="https://www.instagram.com/anbeads/">Instagram</a>
-    <a class="footer-link" href="https://www.portfolio/">portfolio - in construction </a>
+  <footer class="bottom-container">
+    <a class="footer-link linkedin" href="https://www.linkedin.com/in/anna-holubov%C3%A1-84810a162/" target="_blank">LinkedIn</a>
+    <a class="footer-link insta" href="https://www.instagram.com/anbeads/" target="_blank">Instagram</a>
+    <a class="footer-link portfolio" href="https://www.portfolio/" target="_blank">portfolio - in construction </a>
     <p class="copyright">© 2020 Anna Holubová.</p>
-  </div>
+  </footer>
 </body>
 
 </html>
